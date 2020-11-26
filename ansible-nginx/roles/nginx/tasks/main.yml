@@ -1,0 +1,16 @@
+---
+- name: Repo Update
+  command: "apt update"
+
+- name: Install Nginx
+  command: "apt install nginx-full -f -y"
+
+#- name: change default name
+#  template:
+#    src: index.nginx-debian.html
+#    dest: /var/www/html/index.nginx-debian.html
+#    owner: root
+#    mode: '0644'
+
+#- name: reload nginx
+#  command: "/etc/init.d/nginx restart"
